@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ML Item Builder</title>
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDeTVr1iqjPuRBgvnVXSwnsubvGT7dWnFjtQ&s" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Mobile Legends Item Builder</h1>
+  </header>
+  <div class="disclaimer-balloon">
+  <p>⚠️ All Heroes Stats are based on LVL 15.⚠️</p>
+</div>
+ <div class="hero-selection">
+  <label for="hero-select">Select Hero:</label>
+  <select id="hero-select">
+    <option value="0">-- Choose a Hero --</option>
+    
+    <optgroup label="---Marksman---">
+      <optgroup label="Pure">
+      <option value="Layla">Layla</option>
+      <option value="Miya">Miya</option>
+      <option value="Bruno">Bruno</option>
+      <option value="Clint">Clint</option>
+      <option value="Moskov">Moskov</option>
+      <option value="Karrie">Karrie</option>
+      <option value="Irithel">Irithel</option>
+      <option value="Hanabi">Hanabi</option>
+      <option value="Claude">Claude</option>
+      <option value="Granger">Granger</option>
+      <option value="Wanwan">Wanwan</option>
+      <option value="Popol and Kupa">Popol and Kupa</option>
+      <option value="Brody">Brody</option>
+      <option value="Beatrix">Beatrix</option>
+      <option value="Natan">Natan</option>
+      <option value="Melissa">Melissa</option>
+      <option value="Ixia">Ixia</option></optgroup>
+
+      <optgroup label="Primary">
+      <option value="Lesley">Lesley</option>
+      <option value="Kimmy">Kimmy</option></optgroup>
+
+      <optgroup label="Secondary">
+      <option value="Yi Sun-shin">Yi Sun-shin</option>
+      <option value="Roger">Roger</option>
+      <option value="Edith">Edith</option></optgroup>
+
+    </optgroup>
+    <optgroup label="-------------------------------"></optgroup>
+
+
+    <optgroup label="---Fighter---">
+      <optgroup label="Pure">
+      <option value="Balmond">Balmond</option>
+      <option value="Freya">Freya</option>
+      <option value="Chou">Chou</option>
+      <option value="Sun">Sun</option>
+      <option value="Alpha">Alpha</option>
+      <option value="Ruby">Ruby</option>
+      <option value="Lapu-Lapu">Lapu-Lapu</option>
+      <option value="Argus">Argus</option>
+      <option value="Jawhead">Jawhead</option>
+      <option value="Martis">Martis</option>
+      <option value="Aldous">Aldous</option>
+      <option value="Leomord">Leomord</option>
+      <option value="Thamuz">Thamuz</option>
+      <option value="Minsitthar">Minsitthar</option>
+      <option value="Badang">Badang</option>
+      <option value="Guinevere">Guinevere</option>
+      <option value="X.Borg">X.Borg</option>
+      <option value="Dyrroth">Dyrroth</option>
+      <option value="Masha">Masha</option>
+      <option value="Silvanna">Silvanna</option>
+      <option value="Yu Zhong">Yu Zhong</option>
+      <option value="Khaleed">Khaleed</option>
+      <option value="Phoveus">Phoveus</option>
+      <option value="Aulus">Auulus</option>
+      <option value="Cici">Cici</option>
+      <option value="Lukas">Lukas</option></optgroup>
+
+      <optgroup label="Primary">
+      <option value="Alucard">Alucard</option>
+      <option value="Bane">Bane</option>
+      <option value="Zilong">Zilong</option>
+      <option value="Hilda">Hilda</option>
+      <option value="Roger">Roger</option>
+      <option value="Terizla">Terizla</option>
+      <option value="Paquito">Paquito</option>
+      <option value="Yin">Yin</option>
+      <option value="Fredrinn">Fredrinn</option>
+      <option value="Arlott">Arlott</option></optgroup>
+
+      <optgroup label="Secondary">
+      <option value="Gatotkaca">Gatotkaca</option>
+      <option value="Grock">Grock</option>
+      <option value="Kaja">Kaja</option>
+      <option value="Benedetta">Benedetta</option>
+      <option value="Barats">Barats</option>
+      <option value="Julian">Julian</option>
+      <option value="Suyou">Suyou</option>
+      <option value="Kalea">Kalea</option></optgroup>
+
+    </optgroup>
+    <optgroup label="-------------------------------"></optgroup>
+
+    
+    <optgroup label="---Assassin---">
+      <optgroup label="Pure">
+      <option value="Saber">Saber</option>
+      <option value="Karina">Karina</option>
+      <option value="Fanny">Fanny</option>
+      <option value="Hayabusa">Hayabusa</option>
+      <option value="Natalia">Natalia</option>
+      <option value="Lancelot">Lancelot</option>
+      <option value="Helcurt">Helcurt</option>
+      <option value="Gusion">Gusion</option>
+      <option value="Hanzo">Hanzo</option>
+      <option value="Ling">Ling</option>
+      <option value="Aamon">Aamon</option>
+      <option value="Joy">Joy</option>
+      <option value="Nolan">Nolan</option></optgroup>
+
+      <optgroup label="Primary">
+      <option value="Yi Sun-shin">Yi Sun-shin</option>
+      <option value="Harley">Harley</option>
+      <option value="Selena">Selena</option>
+      <option value="Benedetta">Benedetta</option>
+      <option value="Julian">Julian</option>
+      <option value="Suyou">Suyou</option></optgroup>
+
+      <optgroup label="Secondary">
+      <option value="Alucard">Alucard</option>
+      <option value="Zilong">Zilong</option>
+      <option value="Lesley">Lesley</option>
+      <option value="Kadita">Kadita</option>
+      <option value="Mathilda">Mathilda</option>
+      <option value="Paquito">Paquito</option>
+      <option value="Yin">Yin</option>
+      <option value="Arlott">Arlott</option></optgroup>
+
+    </optgroup>
+    <optgroup label="-------------------------------"></optgroup>
+
+
+    <optgroup label="---Tank---">
+      <optgroup label="Pure">
+      <option value="Tigreal">Tigreal</option>
+      <option value="Akai">Akai</option>
+      <option value="Franco">Franco</option>
+      <option value="Hylos">Hylos</option>
+      <option value="Uranus">Uranus</option>
+      <option value="Belerick">Belerick</option>
+      <option value="Khufra">Khufra</option>
+      <option value="Baxia">Baxia</option>
+      <option value="Atlas">Atlas</option>
+      <option value="Gloo">Gloo</option></optgroup>
+
+
+      <optgroup label="Primary">
+      <option value="Gatotkaca">Gatotkaca</option>
+      <option value="Grock">Grock</option>
+      <option value="Minotaur">Minotaur</option>
+      <option value="Johnson">Johnson</option>
+      <option value="Esmeralda">Esmeralda</option>
+      <option value="Barats">Barats</option>
+      <option value="Edith">Edith</option></optgroup>
+
+      <optgroup label="Secondary">
+      <option value="Alice">Alice</option>
+      <option value="Lolita">Lolita</option>
+      <option value="Hilda">Hilda</option>
+      <option value="Terizla">Terizla</option>
+      <option value="Carmilla">Carmilla</option>
+      <option value="Fredrinn">Fredrinn</option>
+      <option value="Chip">Chip</option></optgroup>
+
+    </optgroup>
+    <optgroup label="-------------------------------"></optgroup>
+
+
+    <optgroup label="---Mage---">
+      <optgroup label="Pure">
+      <option value="Nana">Nana</option>
+      <option value="Eudora">Eudora</option>
+      <option value="Gord">Gord</option>
+      <option value="Kagura">Kagura</option>
+      <option value="Cyclops">Cyclops</option>
+      <option value="Aurora">Aurora</option>
+      <option value="Vexana">Vexana</option>
+      <option value="Odette">Odette</option>
+      <option value="Zhask">Zhask</option>
+      <option value="Pharsa">Pharsa</option>
+      <option value="Valir">Valir</option>
+      <option value="Chang'e">Chang'e</option>
+      <option value="Vale">Vale</option>
+      <option value="Lunox">Lunox</option>
+      <option value="Harith">Harith</option>
+      <option value="Lylia">Lylia</option>
+      <option value="Cecilion">Cecilion</option>
+      <option value="Luo Yi">Luo Yi</option>
+      <option value="Yve">Yve</option>
+      <option value="Valentina">Valentina</option>
+      <option value="Xavier">Xavier</option>
+      <option value="Novaria">Novaria</option>
+      <option value="Zhuxin">Zhuxin</option></optgroup>
+
+      <optgroup label="Primary">
+      <option value="Alice">Alice</option>
+      <option value="Kadita">Kadita</option></optgroup>
+
+      <optgroup label="Secondary">
+      <option value="Bane">Bane</option>
+      <option value="Harley">Harley</option>
+      <option value="Selena">Selena</option>
+      <option value="Kimmy">Kimmy</option>
+      <option value="Faramis">Faramis</option>
+      <option value="Esmeralda">Esmeralda</option></optgroup>
+    </optgroup>
+    <optgroup label="-------------------------------"></optgroup>
+
+
+
+    <optgroup label="---Support---">
+      <optgroup label="Pure">
+      <option value="Rafaela">Rafaela</option>
+      <option value="Estes">Estes</option>
+      <option value="Diggie">Diggie</option>
+      <option value="Angela">Angela</option>
+      <option value="Floryn">Floryn</option></optgroup>
+
+      <optgroup label="Primary">
+      <option value="Lolita">Lolita</option>
+      <option value="Kaja">Kaja</option>
+      <option value="Faramis">Faramis</option>
+      <option value="Carmilla">Carmilla</option>
+      <option value="Mathilda">Mathilda</option>
+      <option value="Chip">Chip</option>
+      <option value="Kalea">Kalea</option></optgroup>
+
+      <optgroup label="Secondary">
+      <option value="Minotaur">Minotaur</option>
+      <option value="Johnson">Johnson</option></optgroup>
+
+      
+
+
+    </optgroup>
+
+    
+   
+  </select>
+  
+  <img id="hero-pfp" class="hero-pfp" src="https://i.pinimg.com/736x/9f/16/72/9f1672710cba6bcb0dfd93201c6d4c00.jpg" alt="Hero PFP">
+</div>
+
+
+  <div class="container">
+    <div class="items-panel">
+      <h2>Items</h2>
+
+
+      <div class="category" data-category="Movement">
+    <h3>Movement</h3>
+    <div class="items">
+      <div class="item" draggable="true" data-name="Swift Boots" data-category="Movement"
+           data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+           data-attack-speed="0" data-attack-speed-ratio="15%" data-mana="0" data-mana-regen="0"
+           data-magic-power="0" data-magic-defense="0" data-movement-speed="40"
+           data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+           data-crit-chance="0">
+        <img src="https://static.wikia.nocookie.net/mobile-legends/images/0/07/Swift_Boots.png/revision/latest?cb=20210627055208" alt="Swift Boots">
+        <span>Swift Boots</span>
+      </div>
+
+      <div class="item" draggable="true" data-name="Rapid Boots" data-category="Movement"
+           data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+           data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+           data-magic-power="0" data-magic-defense="0" data-movement-speed="65"
+           data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+           data-crit-chance="0">
+        <img src="https://static.wikia.nocookie.net/mobile-legends/images/a/a4/Rapid_Boots.png/revision/latest?cb=20240110072315" alt="Rapid Boots">
+        <span>Rapid Boots</span>
+      </div>
+
+      <div class="item" draggable="true" data-name="Warrior Boots" data-category="Movement"
+           data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="22"
+           data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+           data-magic-power="0" data-magic-defense="0" data-movement-speed="40"
+           data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+           data-crit-chance="0">
+        <img src="https://static.wikia.nocookie.net/mobile-legends/images/4/4b/Warrior_Boots.png/revision/latest?cb=20210627055015" alt="Warrior Boots">
+        <span>Warrior Boots</span>
+      </div>
+      <div class="item" draggable="true" data-name="Demon Shoes" data-category="Movement"
+           data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+           data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="10"
+           data-magic-power="0" data-magic-defense="0" data-movement-speed="40"
+           data-physical-pen="0" data-magic-pen="0" data-crit-attack="0"
+           data-crit-chance="0">
+        <img src="https://static.wikia.nocookie.net/mobile-legends/images/1/17/Demon_Shoes.png/revision/latest?cb=20240110072404" alt="Demon Shoes">
+        <span>Demon Shoes</span>
+      </div>
+      <div class="item" draggable="true" data-name="Arcane Boots" data-category="Movement"
+           data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+           data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+           data-magic-power="0" data-magic-defense="0" data-movement-speed="40"
+           data-physical-penetration="0" data-magic-pen="10" data-crit-attack="0"
+           data-crit-chance="0" data-cooldown="0">
+        <img src="https://static.wikia.nocookie.net/mobile-legends/images/1/15/Arcane_Boots.png/revision/latest?cb=20240110072249" alt="Arcane Boots">
+        <span>Arcane Boots</span>
+      </div>
+      <div class="item" draggable="true" data-name="Magic Shoes" data-category="Movement"
+           data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+           data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+           data-magic-power="0" data-magic-defense="0" data-movement-speed="40"
+           data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+           data-crit-chance="0" data-cooldown="10%">
+        <img src="https://static.wikia.nocookie.net/mobile-legends/images/5/5a/Magic_Shoes.png/revision/latest?cb=20240110072432" alt="Magic Shoes">
+        <span>Magic Shoes</span>
+      </div>
+      <div class="item" draggable="true" data-name="Tough Boots" data-category="Movement"
+           data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+           data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+           data-magic-power="0" data-magic-defense="22" data-movement-speed="40"
+           data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+           data-crit-chance="0">
+        <img src="https://static.wikia.nocookie.net/mobile-legends/images/8/89/Tough_Boots.png/revision/latest?cb=20240110072337" alt="Tough Boots">
+        <span>Tough Boots</span>
+      </div>
+      <div class="item" draggable="true" data-name="Boots" data-category="Movement"
+           data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+           data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+           data-magic-power="0" data-magic-defense="0" data-movement-speed="20"
+           data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+           data-crit-chance="0">
+        <img src="https://static.wikia.nocookie.net/mobile-legends/images/5/59/Boots.png/revision/latest?cb=20240110072216" alt="Boots">
+        <span>Boots</span>
+      </div>
+    </div>
+  </div>
+
+
+
+      <div class="category" data-category="Attack">
+        <h3>Attack</h3>
+        <div class="items">
+          <div class="item" draggable="true" data-name="Malefic Gun" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="40" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="20" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/7/72/Malefic_Gun.png" alt="Malefic Gun">
+            <span>Malefic Gun</span>
+          </div>
+    
+          <div class="item" draggable="true" data-name="Blade of Despair" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="160" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0" data-movement-speed-ratio="5"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/d/d5/Blade_of_Despair.png" alt="Blade of Despair">
+            <span>Blade of Despair</span>
+          </div>
+    
+          <div class="item" data-name="Great Dragon Spear" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="70" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0" 
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="20" data-cooldown="10">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/d/d4/Great_Dragon_Spear.png/revision/latest?cb=20240109133223" alt="Great Dragon Spear">
+            <span>Great Dragon Spear</span>
+          </div>
+    
+          <div class="item" data-name="Sea Halberd" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="80" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="20" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/8/83/Sea_Halberd.png/revision/latest?cb=20240109134257" alt="Sea Halberd">
+            <span>Sea Halberd</span>
+          </div>
+    
+          <div class="item" data-name="Rose Gold Meteor" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="40" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="20" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-lifesteal="10">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/2/2b/Rose_Gold_Meteor.png/revision/latest?cb=20210627044010" alt="Rose Gold Meteor">
+            <span>Rose Gold Meteor</span>
+          </div>
+    
+          <div class="item" data-name="Blade of Heptaseas" data-category="Attack"
+               data-hp="250" data-hp-regen="0" data-physical-attack="70" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/e/ed/Blade_of_the_Heptaseas.png/revision/latest?cb=20210627031239" alt="Blade of the Heptaseas">
+            <span>Blade of Heptaseas</span>
+          </div>
+    
+          <div class="item" data-name="Hunter Strike" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="80" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="10">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/b/b9/Hunter_Strike.png/revision/latest?cb=20210731111742" alt="Hunter Strike">
+            <span>Hunter Strike</span>
+          </div>
+    
+          <div class="item" data-name="Windtalker" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="35" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="20"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="20">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/4/45/Windtalker.png/revision/latest?cb=20210616130246" alt="Windtalker">
+            <span>Windtalker</span>
+          </div>
+    
+          <div class="item" data-name="Endless Battle" data-category="Attack"
+               data-hp="250" data-hp-regen="0" data-physical-attack="60" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="5"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0" data-movement-speed-ratio="5"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="10" data-lifesteal="8">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/2/2b/Endless_Battle.png/revision/latest?cb=20240109134914" alt="Endless Battle">
+            <span>Endless Battle</span>
+          </div>
+    
+          <div class="item" data-name="Berserker's Fury" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="65" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="25">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/6/6c/Berserker%27s_Fury.png/revision/latest?cb=20240109135108" alt="Berserker's Fury">
+            <span>Berserker's Fury</span>
+          </div>
+    
+          <div class="item" data-name="Haas' Claws" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="40" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="15" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="20">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/f/fd/Haas%27_Claws.png/revision/latest?cb=20240109133028" alt="Haas' Claws">
+            <span>Haas' Claws</span>
+          </div>
+    
+          <div class="item" data-name="Malefic Roar" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="60" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/1/12/Malefic_Roar.png/revision/latest?cb=20210616125818" alt="Malefic Roar">
+            <span>Malefic Roar</span>
+          </div>
+          <div class="item" data-name="Winter Crown" data-category="Attack"
+               data-hp="400" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="5" data-adaptive-attack="45">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/9/9d/Winter_Crown.png/revision/latest?cb=20240706160002" alt="Winter Crown">
+            <span>Winter Crown</span>
+          </div>
+          <div class="item" data-name="Fleeting Time" data-category="Attack"
+               data-hp="600" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-adaptive-attack="30" data-cooldown="15">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/7/71/Fleeting_Time.png/revision/latest?cb=20240706155949" alt="Fleeting Time">
+            <span>Fleeting Time</span>
+          </div>
+          <div class="item" data-name="Sky Piercer" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="15"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-adaptive-attack="60" data-cooldown="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/4/4f/Sky_Piercer.png/revision/latest?cb=20240731072745" alt="Sky Piercer">
+            <span>Sky Piercer</span>
+          </div>
+          <div class="item" data-name="War Axe" data-category="Attack"
+               data-hp="400" data-hp-regen="0" data-physical-attack="35" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="10" data-spellvamp="12">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/7/70/War_Axe.png/revision/latest?cb=20240706160012" alt="War Axe">
+            <span>War Axe</span>
+          </div>
+          <div class="item" data-name="Wind of Nature" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="30" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="20" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-lifesteal="10">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/e/e3/Wind_of_Nature.png/revision/latest?cb=20240109132548" alt="Wind of Nature">
+            <span>Wind of Nature</span>
+          </div>
+          <div class="item" data-name="Golden Staff" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="55" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="15" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/8/80/Golden_Staff.png/revision/latest?cb=20210627031811" alt="Golden Staff">
+            <span>Golden Staff</span>
+          </div>
+          <div class="item" data-name="Corrosion Scythe" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="30" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="30" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0" data-movement-speed-ratio="5"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/f/f3/Corrosion_Scythe.png/revision/latest?cb=20210627031037" alt="Corrosion Scythe">
+            <span>Corrosion Scythe</span>
+          </div>
+          <div class="item" data-name="Demon Hunter Sword" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="35" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="20" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-lifesteal="8">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/1/1a/Demon_Hunter_Sword.png/revision/latest?cb=20210731025511" alt="Demon Hunter Sword">
+            <span>Demon Hunter Sword</span>
+          </div>
+          <div class="item" data-name="Swift Crossbow" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="20" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/a/a1/Swift_Crossbow.png/revision/latest?cb=20240109125340" alt="Swift Crossbow">
+            <span>Swift Crossbow</span>
+          </div>
+          <div class="item" data-name="Magic Blade" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="35" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-lifesteal="10">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/a/ae/Magic_Blade.png/revision/latest?cb=20240109132217" alt="Magic Blade">
+            <span>Magic Blade</span>
+          </div>
+          <div class="item" data-name="Fury Hammer" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="35" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/5/52/Fury_Hammer.png/revision/latest?cb=20240109132148" alt="Fury Hammer">
+            <span>Fury Hammer</span>
+          </div>
+          <div class="item" data-name="Rogue Meteor" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="15" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="10">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/7/75/Rogue_Meteor.png/revision/latest?cb=20240109132025" alt="Rogue Meteor">
+            <span>Rogue Meteor</span>
+          </div>
+          <div class="item" data-name="Ogre Tomahawk" data-category="Attack"
+               data-hp="230" data-hp-regen="0" data-physical-attack="25" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/3/3d/Ogre_Tomahawk.png/revision/latest?cb=20240109131848" alt="Ogre Tomahawk">
+            <span>Ogre Tomahawk</span>
+          </div>
+          <div class="item" data-name="Legion Sword" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="60" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/1/1e/Legion_Sword.png/revision/latest?cb=20240109131009" alt="Legion Sword">
+            <span>Legion Sword</span>
+          </div>
+          <div class="item" data-name="Regular Spear" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="20" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="10" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/3/32/Regular_Spear.png/revision/latest?cb=20220127072851" alt="Regular Spear">
+            <span>Regular Spear</span>
+          </div>
+          <div class="item" data-name="Expert Gloves" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-adaptive-attack="30">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/1/13/Expert_Gloves.png/revision/latest?cb=20240620001003" alt="Expert Gloves">
+            <span>Expert Gloves</span>
+          </div>
+          <div class="item" data-name="Iron Hunting Bow" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="10" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="5">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/b/be/Iron_Hunting_Bow.png/revision/latest?cb=20240109130634" alt="Iron Hunting Bow">
+            <span>Iron Hunting Bow</span>
+          </div>
+          <div class="item" data-name="Vampire Mallet" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="8" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-lifesteal="8">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/f/f9/Vampire_Mallet.png/revision/latest?cb=20240109130816" alt="Vampire Mallet">
+            <span>Vampire Mallet</span>
+          </div>
+          <div class="item" data-name="Javelin" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="8">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/1/1d/Javelin.png/revision/latest?cb=20240109130430" alt="Javelin">
+            <span>Javelin</span>
+          </div>
+          <div class="item" data-name="Knife" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="10" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/5/58/Knife.png/revision/latest?cb=20240109130338" alt="Knife">
+            <span>Knife</span>
+          </div>
+          <div class="item" data-name="Dagger" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="15" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/4/45/Dagger.png/revision/latest?cb=20240109130605" alt="Dagger">
+            <span>Dagger</span>
+          </div>
+          <div class="item" data-name="Power Potion" data-category="Attack"
+               data-hp="0" data-hp-regen="0" data-physical-attack="30" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-lifesteal="15">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/0/06/Power_Potion.png/revision/latest?cb=20240109130008" alt="Power Potion">
+            <span>Power Potion</span>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+      <div class="category" data-category="Magic">
+        <h3>Magic</h3>
+        <div class="items">
+          <div class="item" draggable="true" data-name="Wishing Lantern" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="400" data-mana-regen="0"
+               data-magic-power="75" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="10">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/0/07/Wishing_Lantern.png/revision/latest?cb=20240706155956" alt="Wishing Lantern">
+            <span>Wishing Lantern</span>
+          </div>
+          <div class="item" draggable="true" data-name="Flask of the Oasis" data-category="Magic"
+               data-hp="300" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="60" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="10">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/c/c5/Flask_of_the_Oasis.png/revision/latest?cb=20240109135304" alt="Flask of the Oasis">
+            <span>Flask of the Oasis</span>
+          </div>
+          <div class="item" draggable="true" data-name="Genius Wand" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="75" data-magic-defense="0" data-movement-speed="0" data-movement-speed-ratio="5"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/2/20/Genius_Wand.png/revision/latest?cb=20231008061208" alt="Genius Wand">
+            <span>Genius Wand</span>
+          </div>
+          <div class="item" draggable="true" data-name="Lightning Truncheon" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="400" data-mana-regen="0"
+               data-magic-power="75" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="10">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/e/ee/Lightning_Truncheon.png/revision/latest?cb=20210930074036" alt="Lightning Truncheon">
+            <span>Lightning Truncheon</span>
+          </div>
+          <div class="item" draggable="true" data-name="Blood Wings" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="90" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/4/44/Blood_Wings.png/revision/latest?cb=20210305055304" alt="Blood Wings">
+            <span>Blood Wings</span>
+          </div>
+          <div class="item" draggable="true" data-name="Starlium Scythe" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="6"
+               data-magic-power="70" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="10" data-lifesteal="8">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/2/26/Starlium_Scythe.png/revision/latest?cb=20240620140113" alt="Starlium Scythe">
+            <span>Starlium Scythe</span>
+          </div>
+          <div class="item" draggable="true" data-name="Glowing Wand" data-category="Magic"
+               data-hp="400" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="75" data-magic-defense="0" data-movement-speed="0" data-movement-speed-ratio="5"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/7/7a/Glowing_Wand.png/revision/latest?cb=20240706160031" alt="Glowing Wand">
+            <span>Glowing Wand</span>
+          </div>
+          <div class="item" draggable="true" data-name="Ice Queen Wand" data-category="Magic"
+               data-hp="300" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="75" data-magic-defense="0" data-movement-speed="0" data-movement-speed-ratio="7"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-spellvamp="10">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/d/da/Ice_Queen_Wand.png/revision/latest?cb=20210307060410" alt="Ice Queen Wand">
+            <span>Ice Queen Wand</span>
+          </div>
+          <div class="item" draggable="true" data-name="Concentrated Energy" data-category="Magic"
+               data-hp="400" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="70" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/4/4e/Concentrated_Energy.png/revision/latest?cb=20210731031308" alt="Concentrated Energy">
+            <span>Concentrated Energy</span>
+          </div>
+          <div class="item" draggable="true" data-name="Holy Crystal" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="185" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/6/64/Holy_Crystal.png/revision/latest?cb=20210731030840" alt="Holy Crystal">
+            <span>Holy Crystal</span>
+          </div>
+          <div class="item" draggable="true" data-name="Divine Glaive" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="65" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/9/9a/Divine_Glaive.png/revision/latest?cb=20210524101632" alt="Divine Glaive">
+            <span>Divine Glaive</span>
+          </div>
+          <div class="item" draggable="true" data-name="Clock of Destiny" data-category="Magic"
+               data-hp="400" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="400" data-mana-regen="0"
+               data-magic-power="45" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="10">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/4/4a/Clock_of_Destiny.png/revision/latest?cb=20210627045114" alt="Clock of Destiny">
+            <span>Clock of Destiny</span>
+          </div>
+          <div class="item" draggable="true" data-name="Winter Crown" data-category="Magic"
+               data-hp="400" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-adaptive-attack="45" data-cooldown="5">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/9/9d/Winter_Crown.png/revision/latest?cb=20240706160002" alt="Winter Crown">
+            <span>Winter Crown</span>
+          </div>
+          <div class="item" draggable="true" data-name="Fleeting Time" data-category="Magic"
+               data-hp="600" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-adaptive-attack="30" data-cooldown="15">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/7/71/Fleeting_Time.png/revision/latest?cb=20240706155949" alt="Fleeting Time">
+            <span>Fleeting Time</span>
+          </div>
+          <div class="item" draggable="true" data-name="Sky Piercer" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="15"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-adaptive-attack="60">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/4/4f/Sky_Piercer.png/revision/latest?cb=20240731072745" alt="Sky Piercer">
+            <span>Sky Piercer</span>
+          </div>
+           <div class="item" draggable="true" data-name="Enchanted Talisman" data-category="Magic"
+               data-hp="250" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="50" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="20">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/2/21/Enchanted_Talisman.png/revision/latest?cb=20210627044432" alt="Enchanted Talisman">
+            <span>Enchanted Talisman</span>
+          </div> 
+          <div class="item" draggable="true" data-name="Feather of Heaven" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="20" data-mana="0" data-mana-regen="0"
+               data-magic-power="55" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-lifesteal="10" data-cooldown="5">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/e/ed/Feather_of_Heaven.png/revision/latest?cb=20240109140326" alt="Feather of Heaven">
+            <span>Feather of Heaven</span>
+          </div>
+          <div class="item" draggable="true" data-name="Elegant Gem" data-category="Magic"
+               data-hp="300" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="380" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/d/d4/Elegant_Gem.png/revision/latest?cb=20240620000956" alt="Elegant Gem">
+            <span>Elegant Gem</span>
+          </div>
+          <div class="item" draggable="true" data-name="Exotic Veil" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="30" data-magic-defense="0" data-movement-speed="0" data-movement-speed-ratio="5"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/e/e9/Exotic_Veil.png/revision/latest?cb=20210921151940" alt="Exotic Veil">
+            <span>Exotic Veil</span>
+          </div>
+           <div class="item" draggable="true" data-name="Azure Blade" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="5"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="5">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/6/6d/Azure_Blade.png/revision/latest?cb=20240110063912" alt="Azure Blade">
+            <span>Azure Blade</span>
+          </div>
+          <div class="item" draggable="true" data-name="Tome of Evil" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="4"
+               data-magic-power="35" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="8">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/0/0a/Tome_of_Evil.png/revision/latest?cb=20240110064642" alt="Tome of Evil">
+            <span>Tome of Evil</span>
+          </div>
+          <div class="item" draggable="true" data-name="Magic Wand" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="45" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/b/bc/Magic_Wand.png/revision/latest?cb=20240110064711" alt="Magic Wand">
+            <span>Magic Wand</span>
+          </div>
+          <div class="item" draggable="true" data-name="Mystic Container" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="15" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-spellvamp="8">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/2/23/Mystic_Container.png/revision/latest?cb=20240110064746" alt="Mystic Container">
+            <span>Mystic Container</span>
+          </div>
+          <div class="item" data-name="Expert Gloves" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-adaptive-attack="30">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/1/13/Expert_Gloves.png/revision/latest?cb=20240620001003" alt="Expert Gloves">
+            <span>Expert Gloves</span>
+          </div>
+          <div class="item" draggable="true" data-name="Book of Sages" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="8" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="5">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/3/35/Book_of_Sages.png/revision/latest?cb=20240110064937" alt="Book of Sages">
+            <span>Book of Sages</span>
+          </div>
+          <div class="item" draggable="true" data-name="Magic Necklace" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="2"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" >
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/c/cd/Magic_Necklace.png/revision/latest?cb=20240110065246" alt="Magic Necklace">
+            <span>Magic Necklace</span>
+          </div>
+          <div class="item" draggable="true" data-name="Power Crystal" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="280" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/f/fd/Power_Crystal.png/revision/latest?cb=20240110065203" alt="Power Crystal">
+            <span>Power Crystal</span>
+          </div>
+          <div class="item" draggable="true" data-name="Mystery Codex" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="15" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/2/2c/Mystery_Codex.png/revision/latest?cb=20240110065418" alt="Mystery Codex">
+            <span>Mystery Codex</span>
+          </div>
+          <div class="item" draggable="true" data-name="Lantern of Hope" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="20" data-magic-defense="0" data-movement-speed="0" data-attack-speed-ratio="4"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="2">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/7/79/Lantern_of_Hope.png/revision/latest?cb=20210924150801" alt="Lantern of Hope">
+            <span>Lantern of Hope</span>
+          </div>
+          <div class="item" draggable="true" data-name="Flower of Hope" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-adaptive-attack-ratio="5">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/2/20/Flower_of_Hope.png/revision/latest?cb=20210928021759" alt="Flower of Hope">
+            <span>Flower of Hope</span>
+          </div>
+          <div class="item" draggable="true" data-name="Magic Potion" data-category="Magic"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="30" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="10"> 
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/5/58/Magic_Potion.png/revision/latest?cb=20240110065542" alt="Magic Potion">
+            <span>Magic Potion</span>
+          </div>
+        </div>
+      </div>
+    
+
+
+      <div class="category" data-category="Defense">
+        <h3>Defense</h3>
+        <div class="items">
+          <div class="item" data-name="Fleeting Time" data-category="Defense"
+               data-hp="600" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-adaptive-attack="30" data-cooldown="15">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/7/71/Fleeting_Time.png/revision/latest?cb=20240706155949" alt="Fleeting Time">
+            <span>Fleeting Time</span>
+          </div>
+          <div class="item" data-name="Radiant Armor" data-category="Defense"
+               data-hp="950" data-hp-regen="12" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="40" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/d/d8/Radiant_Armor.png/revision/latest?cb=20240110073249" alt="Radiant Armor">
+            <span>Radiant Armor</span>
+          </div>
+          <div class="item" data-name="Twilight Armor" data-category="Defense"
+               data-hp="1200" data-hp-regen="0" data-physical-attack="0" data-physical-defense="15"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/9/9f/Twilight_Armor.png/revision/latest?cb=20240728121419" alt="Twilight Armor">
+            <span>Twilight Armor</span>
+          </div>
+          <div class="item" data-name="Brute Force Breastplate" data-category="Defense"
+               data-hp="600" data-hp-regen="0" data-physical-attack="0" data-physical-defense="20"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="10">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/f/f6/Brute_Force_Breastplate.png/revision/latest?cb=20240728121246" alt="Brute Force Breastplate">
+            <span>Brute Force Breastplate</span>
+          </div>
+          <div class="item" data-name="Immortality" data-category="Defense"
+               data-hp="800" data-hp-regen="0" data-physical-attack="0" data-physical-defense="15"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/8/84/Immortality.png/revision/latest?cb=20240728121655" alt="Immortality">
+            <span>Immortality</span>
+          </div>
+          <div class="item" data-name="Dominance IceDominance IceDominance Ice" data-category="Defense"
+               data-hp="250" data-hp-regen="0" data-physical-attack="0" data-physical-defense="55"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0" data-movement-speed-ratio="5"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/e/e3/Dominance_Ice.png/revision/latest?cb=20240728122016" alt="Dominance Ice">
+            <span>Dominance Ice</span>
+          </div>
+          <div class="item" data-name="Athena's Shield" data-category="Defense"
+               data-hp="900" data-hp-regen="2" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="48" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/1/15/Athena%27s_Shield.png/revision/latest?cb=20240728122125" alt="Athena's Shield">
+            <span>Athena's Shield</span>
+          </div>
+          <div class="item" data-name="Oracle" data-category="Defense"
+               data-hp="850" data-hp-regen="0" data-physical-attack="0" data-physical-defense="20"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="20" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="10">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/1/17/Oracle.png/revision/latest?cb=20240728122545" alt="Oracle">
+            <span>Oracle</span>
+          </div>
+          <div class="item" data-name="Antique Cuirass" data-category="Defense"
+               data-hp="920" data-hp-regen="4" data-physical-attack="0" data-physical-defense="40"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/4/40/Antique_Cuirass.png/revision/latest?cb=20240728122516" alt="Antique Cuirass">
+            <span>Antique Cuirass</span>
+          </div>
+          <div class="item" data-name="Guardian Helmet" data-category="Defense"
+               data-hp="1550" data-hp-regen="20" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/a/a3/Guardian_Helmet.png/revision/latest?cb=20240728122738" alt="Guardian Helmet">
+            <span>Guardian Helmet</span>
+          </div>
+          <div class="item" data-name="Cursed Helmet" data-category="Defense"
+               data-hp="1200" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="20" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/8/80/Cursed_Helmet.png/revision/latest?cb=20240728122832" alt="Cursed Helmet">
+            <span>Cursed Helmet</span>
+          </div>
+          <div class="item" data-name="Thunder Belt" data-category="Defense"
+               data-hp="800" data-hp-regen="0" data-physical-attack="0" data-physical-defense="15"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="15" data-movement-speed="20"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/d/dd/Thunder_Belt.png/revision/latest?cb=20240303143710" alt="Thunder Belt">
+            <span>Thunder Belt</span>
+          </div>
+          <div class="item" data-name="Queen's Wings" data-category="Defense"
+               data-hp="600" data-hp-regen="0" data-physical-attack="40" data-physical-defense="10"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-adaptive-attack="40" data-cooldown="10" data-spellvamp="10">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/f/f4/Queen%27s_Wings.png/revision/latest?cb=20240728123011" alt="Queen's Wings">
+            <span>Queen's Wings</span>
+          </div>
+          <div class="item" data-name="Blade Armor" data-category="Defense"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="70"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/d/d9/Blade_Armor.png/revision/latest?cb=20240728123118" alt="Blade Armor">
+            <span>Blade Armor</span>
+          </div><div class="item" data-name="Steel Legplates" data-category="Defense"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="35"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/3/3c/Steel_Legplates.png/revision/latest?cb=20240110071517" alt="Steel Legplates">
+            <span>Steel Legplates</span>
+          </div>
+          <div class="item" data-name="Dreadnaught Armor" data-category="Defense"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="30"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/0/0f/Dreadnaught_Armor.png/revision/latest?cb=20240110071105" alt="Dreadnaught Armor">
+            <span>Dreadnaught Armor</span>
+          </div>
+          <div class="item" data-name="Black Ice Shield" data-category="Defense"
+               data-hp="250" data-hp-regen="0" data-physical-attack="0" data-physical-defense="18"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/5/5d/Black_Ice_Shield.png/revision/latest?cb=20240110071203" alt="Black Ice Shield">
+            <span>Black Ice Shield</span>
+          </div>
+          <div class="item" data-name="Silence Robe" data-category="Defense"
+               data-hp="540" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="23" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/a/a4/Silence_Robe.png/revision/latest?cb=20240110071439" alt="Silence Robe">
+            <span>Silence Robe</span>
+          </div>
+          <div class="item" data-name="Molten Essence" data-category="Defense"
+               data-hp="540" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/8/8c/Molten_Essence.png/revision/latest?cb=20240110071234" alt="Molten Essence">
+            <span>Molten Essence</span>
+          </div>
+          <div class="item" data-name="Ares Belt" data-category="Defense"
+               data-hp="770" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/0/04/Ares_Belt.png/revision/latest?cb=20210921161332" alt="Ares Belt">
+            <span>Ares Belt</span>
+          </div>
+          <div class="item" data-name="Hero's Ring" data-category="Defense"
+               data-hp="150" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0" data-cooldown="5">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/9/91/Hero%27s_Ring.png/revision/latest?cb=20210921161813" alt="Hero's Ring">
+            <span>Hero's Ring</span>
+          </div>
+          <div class="item" data-name="Healing Necklace" data-category="Defense"
+               data-hp="0" data-hp-regen="4" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/d/d7/Healing_Necklace.png/revision/latest?cb=20210921161214" alt="Healing Necklace">
+            <span>Healing Necklace</span>
+          </div>
+          <div class="item" data-name="Magic Resist Cloak" data-category="Defense"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="14" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/4/4c/Magic_Resist_Cloak.png/revision/latest?cb=20210921162156" alt="Magic Resist Cloak">
+            <span>Magic Resist Cloak</span>
+          </div>
+          <div class="item" data-name="Leather Jerkin" data-category="Defense"
+               data-hp="0" data-hp-regen="0" data-physical-attack="0" data-physical-defense="14"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/5/58/Leather_Jerkin.png/revision/latest?cb=20210921162254" alt="Leather Jerkin">
+            <span>Leather Jerkin</span>
+          </div>
+          <div class="item" data-name="Vitality Crystal" data-category="Defense"
+               data-hp="230" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/e/ea/Vitality_Crystal.png/revision/latest?cb=20210826093250" alt="Vitality Crystal">
+            <span>Vitality Crystal</span>
+          </div>
+          <div class="item" data-name="Rock Potion" data-category="Defense"
+               data-hp="500" data-hp-regen="0" data-physical-attack="0" data-physical-defense="0"
+               data-attack-speed="0" data-attack-speed-ratio="0" data-mana="0" data-mana-regen="0"
+               data-magic-power="0" data-magic-defense="0" data-movement-speed="0"
+               data-physical-penetration="0" data-magic-penetration="0" data-crit-attack="0"
+               data-crit-chance="0">
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/0/03/Rock_Potion.png/revision/latest?cb=20240110065943" alt="Rock Potion">
+            <span>Rock Potion</span>
+          </div>
+        </div>
+      </div>
+    
+      
+    </div>
+    
+
+    <div class="build-container">
+      <div class="build-panel">
+        <div class="circle-slot" id="slot1"></div>
+        <div class="circle-slot" id="slot2"></div>
+        <div class="circle-slot" id="slot3"></div>
+        <div class="circle-slot" id="slot4"></div>
+        <div class="circle-slot" id="slot5"></div>
+        <div class="circle-slot" id="slot6"></div>
+      </div>
+
+      <button id="clear-build">CLEAR</button>
+      <button id="compute-stats">COMPUTE</button>
+      
+
+      <div class="stats-panel" id="stats-panel">
+        <h2>Build Stats</h2>
+        <ul id="stat-summary">
+          <li>HP: <span id="stat-hp">0</span></li>
+          <li>HP Regen: <span id="stat-hp-regen">0</span></li>
+          <li>Physical Attack: <span id="stat-physical-attack">0</span></li>
+          <li>Physical Defense: <span id="stat-physical-defense">0</span></li>
+          <li>Adaptive Attack: <span id="stat-adaptive-attack">0</span></li>
+          <li>Adaptive Attack Ratio: <span id="stat-adaptive-attack-ratio">0</span></li>
+          <li>Attack Speed: <span id="stat-attack-speed">0</span></li>
+          <li>Attack Speed Ratio: <span id="stat-attack-speed-ratio">0%</span></li>
+          <li>Mana: <span id="stat-mana">0</span></li>
+          <li>Mana Regen: <span id="stat-mana-regen">0</span></li>
+          <li>Magic Power: <span id="stat-magic-power">0</span></li>
+          <li>Magic Defense: <span id="stat-magic-defense">0</span></li>
+          <li>Movement Speed: <span id="stat-movement-speed">0</span></li>
+          <li>Movement Speed Ratio: <span id="stat-movement-speed-ratio">0%</span></li>
+          <li>Physical Penetration: <span id="stat-physical-pen">0</span></li>
+          <li>Magic Penetration: <span id="stat-magic-pen">0</span></li>
+          <li>Crit Attack: <span id="stat-crit-attack">0</span></li>
+          <li>Lifesteal: <span id="stat-lifesteal">0%</span></li>
+          <li>Cooldown Reduction: <span id="stat-cooldown">0%</span></li>
+          <li>Crit Chance: <span id="stat-crit-chance">0%</span></li>
+          <li>Spell Vamp: <span id="stat-spellvamp">0%</span></li>
+          
+
+
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
